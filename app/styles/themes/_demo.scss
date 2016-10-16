@@ -1,0 +1,71 @@
+// ========================================================
+// DEMOS - Styleguide
+// ========================================================
+
+.demo.global-width {
+    padding: 20px;
+
+
+    .columns {
+        margin-top: 35px;
+    }
+
+    .select-section {
+        border-bottom: 1px solid black;
+
+        .section-name a{
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            opacity: 1;
+            transition: background-color $time-fast ease-in-out, color $time-fast ease-in-out, opacity $time-fast ease-in-out;
+
+
+            &:hover,
+            &:active {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .show-code {
+        h3:first-child {
+            margin-top: 0;
+        }
+    }
+
+    hr:last-child {
+        display: none;
+    }
+
+    nav ol li {
+        padding: 5px 0;
+    }
+}
+
+
+.demo.grid {
+
+
+    .select-section {
+        margin-bottom: 0.5em;
+    }
+
+
+    .columns {
+        margin-top: 0px;
+        border: none;
+    }
+
+
+    .box-inner {
+        width: 100%;
+        background: $main-black;
+        color: $main-white;
+        text-align: center;
+        padding: 15px 0;
+        align-self: center;
+    }
+}

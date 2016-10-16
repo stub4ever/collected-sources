@@ -1,0 +1,119 @@
+// ========================================================
+// SECTIONS
+// ========================================================
+
+$margin: 0.9375em;
+// Global
+
+.global-width {
+    position: relative;
+    max-width: 80em; // 1280 px
+    margin: 0 auto;
+}
+
+
+.padded-inner {
+    padding: $margin;
+    box-sizing: border-box;
+}
+
+
+// Flex grid columns
+
+$columns-gutter-compensation: -0.5em !default;
+$column-gutter: 0.5em !default;
+
+
+.columns {
+    display: flex;
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: $columns-gutter-compensation;
+    margin-right: $columns-gutter-compensation;
+
+    &.columns--scrollable {
+        overflow: scroll;
+        overflow-scrolling: touch;
+    }
+}
+
+
+.column {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    padding: $column-gutter;
+
+    &.column--scrollable {
+        overflow: scroll;
+        overflow-scrolling: touch;
+    }
+
+    &.column--centered {
+        align-self: center;
+    }
+
+    &.column--text-centered {
+        align-self: center;
+        text-align: center;
+    }
+
+    &.column--gapless {
+        margin: 0 0 auto;
+    }
+}
+
+$numbers: (one, two, three, four, five, six,
+    seven, eight, nine, ten, eleven, twelve);
+
+@for $index from 1 through length($numbers) {
+
+    $number: nth($numbers, $index);
+
+    .column-#{ $number } {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        flex-basis: $index / 12 * 100%;
+        max-width: $index / 12 * 100%;
+        padding: $column-gutter;
+
+        &.column--scrollable {
+            overflow: scroll;
+            overflow-scrolling: touch;
+        }
+
+        &.column--centered {
+            align-self: center;
+        }
+
+        &.column--text-centered {
+            align-self: center;
+            text-align: center;
+        }
+
+        &.column--gapless {
+            margin: 0 0 auto;
+        }
+    }
+
+
+    .column--offset-#{$number} {
+        box-sizing: border-box;
+        margin-left: $index / 12 * 100%;
+    }
+}
+
+// ========================================================
+// MIN WIDTH 480px
+// ========================================================
+
+@media screen and (min-width: 30em) {
+    .columns {
+        flex-direction: row;
+    }
+}
+
+
