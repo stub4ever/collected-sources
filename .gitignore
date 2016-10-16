@@ -5,3 +5,8 @@ bower_components
 .sass-cache
 bower_modules
 .DS_Stores
+
+_grunt
+app
+.editorconfig
+

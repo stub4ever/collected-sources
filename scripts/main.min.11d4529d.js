@@ -1,0 +1,1 @@
+/*! grunt-start-kit v1.0.0 | https://github.com/stub4ever/grunt-start-kit#readme */"use strict";console.log("Hi there!"),console.log("Hi there!");
