@@ -1,3 +1,47 @@
 // ========================================================
 
 // # COMPONENTS
+
+.navbar-fixed {
+    max-width: 15%;
+    position: fixed;
+    top: 105px;
+    left: 0;
+
+    ol {
+        padding: 26px 10px;
+        border: 1px solid black;
+        border-top-right-radius: 10px;
+    }
+
+    li {
+        display: inline-block;
+        text-align: center;
+        font-weight: 200;
+        width: 100%;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-top: 20px;
+            margin-bottom: 0px;
+
+            a {
+                border: 1px solid rgba(0,0,0,0.1);
+                padding: 10px;
+            }
+        }
+    }
+}
+
+
+// ========================================================
+// MAX WIDTH 780px
+// ========================================================
+
+@media screen and (max-width: 48.75em) {
+    .navbar-fixed {
+        display: none;
+    }
+}
+
+

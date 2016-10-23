@@ -4,6 +4,7 @@
 
 .demo.global-width {
     padding: 20px;
+    margin-left: 15%;
 
 
     .columns {
@@ -14,6 +15,8 @@
         border-bottom: 1px solid black;
 
         .section-name a{
+            box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+            border-top-left-radius: 10px;
             display: inline-block;
             background-color: black;
             color: white;
@@ -42,6 +45,8 @@
 
     nav ol li {
         padding: 5px 0;
+        display: inline-block;
+        margin-right: 20px;
     }
 }
 
@@ -67,5 +72,223 @@
         text-align: center;
         padding: 15px 0;
         align-self: center;
+    }
+}
+
+//color purple;
+.global-width:first-of-type  {
+
+    .select-section {
+        border-bottom: 1px solid $purple;
+    }
+
+    .select-section .section-name a{
+        background-color: $purple;
+    }
+
+    .box-border {
+        border: 1px solid $purple;
+
+        a {
+            color: $purple;
+
+            &:hover,
+            &:active {
+                color: black;
+            }
+        }
+    }
+}
+
+
+//color orange;
+.global-width:nth-of-type(2)  {
+
+    .select-section {
+        border-bottom: 1px solid $orange;
+    }
+
+    .select-section .section-name a{
+        background-color: $orange;
+    }
+
+    .box-border {
+        border: 1px solid $orange;
+
+        a {
+            color: $orange;
+
+            &:hover,
+            &:active {
+                color: black;
+            }
+        }
+    }
+}
+
+//color mind;
+.global-width:nth-of-type(3)  {
+
+    .select-section {
+        border-bottom: 1px solid $mind;
+    }
+
+    .select-section .section-name a{
+        background-color: $mind;
+    }
+
+    .box-border {
+        border: 1px solid $mind;
+
+        a {
+            color: $mind;
+
+            &:hover,
+            &:active {
+                color: black;
+            }
+        }
+    }
+}
+
+
+//color brown;
+.global-width:nth-of-type(4)  {
+
+    .select-section {
+        border-bottom: 1px solid $brown;
+    }
+
+    .select-section .section-name a{
+        background-color: $brown;
+    }
+
+    .box-border {
+        border: 1px solid $brown;
+
+        a {
+            color: $brown;
+
+            &:hover,
+            &:active {
+                color: black;
+            }
+        }
+    }
+}
+
+
+//color blue;
+.global-width:nth-of-type(5)  {
+
+    .select-section {
+        border-bottom: 1px solid $blue;
+    }
+
+    .select-section .section-name a{
+        background-color: $blue;
+    }
+
+    .box-border {
+        border: 1px solid $blue;
+
+        a {
+            color: $blue;
+
+            &:hover,
+            &:active {
+                color: black;
+            }
+        }
+    }
+}
+
+
+
+//color red;
+.global-width:nth-of-type(6)  {
+
+    .select-section {
+        border-bottom: 1px solid $red;
+    }
+
+    .select-section .section-name a{
+        background-color: $red;
+    }
+
+    .box-border {
+        border: 1px solid $red;
+
+        a {
+            color: $red;
+
+            &:hover,
+            &:active {
+                color: black;
+            }
+        }
+    }
+}
+
+//color lime;
+.global-width:nth-of-type(7)  {
+
+    .select-section {
+        border-bottom: 1px solid $lime;
+    }
+
+    .select-section .section-name a{
+        background-color: $lime;
+    }
+
+    .box-border {
+        border: 1px solid $lime;
+
+        a {
+            color: $lime;
+
+            &:hover,
+            &:active {
+                color: black;
+            }
+        }
+    }
+}
+
+
+//color yellow;
+.global-width:nth-of-type(8)  {
+
+    .select-section {
+        border-bottom: 1px solid $yellow;
+    }
+
+    .select-section .section-name a{
+        background-color: $yellow;
+    }
+
+    .box-border {
+        border: 1px solid $yellow;
+
+        a {
+            color: $yellow;
+
+            &:hover,
+            &:active {
+                color: black;
+            }
+        }
+    }
+}
+
+
+
+// ========================================================
+// MAX WIDTH 780px
+// ========================================================
+
+@media screen and (max-width: 48.75em) {
+    .demo.global-width {
+        margin-left: 0;
     }
 }
