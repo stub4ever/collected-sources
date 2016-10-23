@@ -26,9 +26,15 @@ body {
 
 a {
   background: transparent;
-  color: $color-link;
+  color: black;
   text-decoration: none;
-  transition: color .2s;
+  transition: color .2s ease-in-out, opacity .2s ease-in-out;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 // ========================================================
@@ -70,6 +76,9 @@ h6 {
 // Lists
 // ========================================================
 
+ol {
+    padding: 0;
+}
 // ========================================================
 // Quotes
 // ========================================================

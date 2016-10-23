@@ -5,6 +5,9 @@
 $margin: 0.9375em;
 // Global
 
+.page-content {
+    position: relative;
+}
 .global-width {
     position: relative;
     max-width: 80em; // 1280 px
@@ -17,11 +20,32 @@ $margin: 0.9375em;
     box-sizing: border-box;
 }
 
+.box-border {
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+
+    h2 {
+        font-weight: 600;
+        opacity: 0.9;
+    }
+
+    p {
+        opacity: 0.9;
+    }
+}
+
+.box-border + .box-border {
+    margin-top: 30px;
+}
+
+
 
 // Flex grid columns
 
-$columns-gutter-compensation: -0.5em !default;
-$column-gutter: 0.5em !default;
+$columns-gutter-compensation: -1em !default;
+$column-gutter: 1em !default;
 
 
 .columns {
@@ -115,5 +139,23 @@ $numbers: (one, two, three, four, five, six,
         flex-direction: row;
     }
 }
+
+// ========================================================
+// MAX WIDTH 780px
+// ========================================================
+
+@media screen and (max-width: 48.75em) {
+    .columns {
+        flex-direction: row;
+    }
+
+    .global-width .column-four {
+        flex-grow: 1;
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
 
 
